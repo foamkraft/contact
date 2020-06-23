@@ -1,15 +1,14 @@
-// Initialize Firebase (ADD YOUR OWN DATA)
-var firebaseConfig = {
-  apiKey: "AIzaSyCs942o5j1RaeMeWNZdMA_EoKEWSL_H6Ao",
-  authDomain: "contactform-4160c.firebaseapp.com",
-  databaseURL: "https://contactform-4160c.firebaseio.com",
-  projectId: "contactform-4160c",
-  storageBucket: "contactform-4160c.appspot.com",
-  messagingSenderId: "289550506731",
-  appId: "1:289550506731:web:bcc61b5679046f28237cae"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  var firebaseConfig = {
+    apiKey: "AIzaSyA4WJR8Vmj_e2rnQf5S4iBK3ub2zWwpGHA",
+    authDomain: "contact-9191f.firebaseapp.com",
+    databaseURL: "https://contact-9191f.firebaseio.com",
+    projectId: "contact-9191f",
+    storageBucket: "contact-9191f.appspot.com",
+    messagingSenderId: "909627760527",
+    appId: "1:909627760527:web:af8ea6a46e395214aef5fa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
