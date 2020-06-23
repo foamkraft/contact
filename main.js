@@ -25,11 +25,11 @@ function submitForm(e){
   var company = getInputVal('company');
   var email = getInputVal('email');
   var phone = getInputVal('phone');
-  var need = getInputVal('need');
+  var q = getInputVal('q');
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, company,  email, phone, need, message);
+  saveMessage(name, company,  email, phone, q, message);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -49,14 +49,14 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, need, message){
+function saveMessage(name, company, email, phone, q, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
     company:company,
     email:email,
     phone:phone,
-    need:need,
+    q:q,
     message:message
   });
 }
