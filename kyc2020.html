@@ -234,7 +234,7 @@ h3:after {
   <table class="rwd-table" id="tbl_users_list">
     <tbody>
       <tr>
-        <th>#ID</th>
+        <!--th>#ID</th-->
    <th>NAME </th>
    <th>company</th>
    <th>email</th>
@@ -260,14 +260,14 @@ h3:after {
    var childData = childSnapshot.val();
    
    var row = tblUsers.insertRow(rowIndex);
-   //var cellId = row.insertCell(0);
-   var cellName = row.insertCell(1);
-   var cellC = row.insertCell(2);
-   var cellP = row.insertCell(3);   
-   var cellE = row.insertCell(4);
-   var cellQ = row.insertCell(5);
-   var cellM = row.insertCell(6);
-   cellId.appendChild(document.createTextNode(childKey));
+  // var cellId = row.insertCell(0);
+   var cellName = row.insertCell(0);
+   var cellC = row.insertCell(1);
+   var cellP = row.insertCell(2);   
+   var cellE = row.insertCell(3);
+   var cellQ = row.insertCell(4);
+   var cellM = row.insertCell(5);
+  // cellId.appendChild(document.createTextNode(childKey));
    cellName.appendChild(document.createTextNode(childData.name));
    cellC.appendChild(document.createTextNode(childData.company));
    cellP.appendChild(document.createTextNode(childData.phone));
